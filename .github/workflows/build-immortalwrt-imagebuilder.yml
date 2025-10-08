@@ -50,7 +50,7 @@ jobs:
       run: |
         set -Eeuo pipefail
         cd "$IMAGEBUILDER_DIR"
-        # 更新配置文件（合并 sed 调用）
+        # 更新配置文件
         sed -i \
           -e 's/CONFIG_GRUB_TIMEOUT="3"/CONFIG_GRUB_TIMEOUT="0"/' \
           -e 's/CONFIG_GRUB_EFI_IMAGES=y/CONFIG_GRUB_EFI_IMAGES=n/' \
