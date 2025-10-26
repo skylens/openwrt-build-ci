@@ -22,3 +22,4 @@ uci commit network
 uci commit dhcp
 /etc/init.d/dnsmasq restart
 /etc/init.d/network restart
+[ -d /usr/share/v2ray ] && ln -s /usr/share/v2ray/*.dat /usr/share/xray/
