@@ -76,7 +76,7 @@ jobs:
       run: |
         set -Eeuo pipefail
         cd "$IMAGEBUILDER_DIR"
-        make image PACKAGES="-bnx2-firmware -dnsmasq dnsmasq-full luci luci-i18n-base-zh-cn kmod-e100 kmod-e1000 kmod-vmxnet3 kmod-wireguard open-vm-tools lrzsz" FILES="files"
+        make image PACKAGES="-bnx2-firmware -dnsmasq dnsmasq-full luci luci-i18n-base-zh-cn kmod-e100 kmod-e1000 kmod-vmxnet3 kmod-wireguard open-vm-tools lrzsz tar unzip wget-ssl curl" FILES="files"
 
     - name: Generate OVA Files
       run: |
