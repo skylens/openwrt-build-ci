@@ -20,4 +20,5 @@ uci add_list dhcp.@dnsmasq[0].server='172.16.32.1'
 uci set dhcp.@dnsmasq[0].rebind_protection=0
 uci commit network
 uci commit dhcp
+/etc/init.d/dnsmasq restart
 /etc/init.d/network restart
